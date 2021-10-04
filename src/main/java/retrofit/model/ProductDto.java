@@ -1,24 +1,19 @@
 package retrofit.model;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.List;
 @Data
-@JsonInclude(JsonInclude.Include.NON_NULL)
 @NoArgsConstructor
 @AllArgsConstructor
-//@With
+@Builder
 public class ProductDto {
 
-        @JsonProperty("id")
         private Integer id;
-        @JsonProperty("title")
         private String title;
-        @JsonProperty("price")
         private int price;
-        @JsonProperty("categoryTitle")
         private String categoryTitle;
 
         public ProductDto withId(Integer id) {
