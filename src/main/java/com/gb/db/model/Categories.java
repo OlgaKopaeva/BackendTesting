@@ -66,4 +66,9 @@ public class Categories {
     public void setTitle(String title) {
         this.title = title == null ? null : title.trim();
     }
+
+    public String toString(){
+        return "category: " + getId() + ", " + getTitle();
+    }
+
 }
