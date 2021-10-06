@@ -1,7 +1,7 @@
-package retrofit.api;
+package com.gb.retrofit.api;
 
-import retrofit.model.CategoryDto;
-import retrofit.model.ProductDto;
+import com.gb.retrofit.model.CategoryDto;
+import com.gb.retrofit.model.ProductDto;
 import retrofit2.Call;
 import retrofit2.http.*;
 

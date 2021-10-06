@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.*;
-import retrofit.api.MiniMarketService;
-import retrofit.model.ProductDto;
+import com.gb.retrofit.api.MiniMarketService;
+import com.gb.retrofit.model.ProductDto;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

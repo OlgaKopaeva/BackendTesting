@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="development"><!--в данном блоке настраиваются подключения к БД-->
+        <!--Maybe several environments (production, testing, environment, etc.) -->
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="org.h2.Driver"/>
+                <property name="url" value="jdbc:h2:~/olcha/test"/>
+                <property name="username" value="sa"/>
+                <property name="password" value=""/>
+            </dataSource>
+        </environment>
+    </environments>
+<!--Block for mappers description, that will be generating -->
+    <mappers><!--в данном блоке необходимо описать маперы, которые используются в проекте-->
+        <mapper resource="com/gb/db/mapper/xml/CategoriesMapper.xml"/>
+        <mapper resource="com/gb/db/mapper/xml/ProductsMapper.xml"/>
+    </mappers>
+</configuration>
