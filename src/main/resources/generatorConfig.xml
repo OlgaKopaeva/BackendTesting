@@ -1,0 +1,42 @@
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <classPathEntry
+            location="/home/olcha/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar"/>
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="org.h2.Driver"
+                        connectionURL="jdbc:h2:~/olcha/test"
+                        userId="sa"
+                        password="">
+        </jdbcConnection>
+
+        <!--Folder for generator for JavaModel - generation on tables in BD -->
+        <javaModelGenerator targetPackage="com.gb.db.model" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!--Folder for generator for Mappers - sql content to java objects -->
+        <sqlMapGenerator targetPackage="com.gb.db.mapper.xml" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!--Folder for generator for javaClients - one for products, one for categories. They're java classes with all necessary methodes -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.gb.db.dao"
+                             targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!-- Tables-->
+        <table tableName="categories">
+            <generatedKey column="id" sqlStatement="DB2" identity="true"/>
+        </table>
+        <table tableName="products">
+            <generatedKey column="id" sqlStatement="DB2" identity="true"/>
+        </table>
+
+    </context>
+</generatorConfiguration>

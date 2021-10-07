@@ -1,4 +1,4 @@
-package retrofit.model;
+package com.gb.retrofit.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
