@@ -10,7 +10,7 @@ public class MyBatisHelper {
     private SqlSession createSession(){
         SqlSessionFactory sessionFactory =
                 new SqlSessionFactoryBuilder()
-                        .build(ProductsTests.class.getResourceAsStream("mybatis-config.xml"));
+                        .build(ProductsTestsDB.class.getResourceAsStream("mybatis-config.xml"));
         SqlSession session = sessionFactory.openSession();
         return session;
     }

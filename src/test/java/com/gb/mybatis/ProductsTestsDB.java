@@ -11,7 +11,7 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class ProductsTests {
+public class ProductsTestsDB {
     public static ProductsMapper mapper;
 
     @BeforeAll
