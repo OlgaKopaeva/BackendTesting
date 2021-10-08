@@ -4,3 +4,4 @@ allure-results/*
 class
 .allure/*
 .idea/*
+model/*
