@@ -11,7 +11,7 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class ProductsTestsDB {
+public class ProductsTests {
     public static ProductsMapper mapper;
 
     @BeforeAll
@@ -25,7 +25,7 @@ public class ProductsTestsDB {
     @DisplayName("Create product")
     void testCreateProduct() {
         Products product = new Products();
-        product.setPrice(36);
+        product.setPrice(35);
         product.setTitle("Coca cola");
         product.setCategoryId(1L);
 
