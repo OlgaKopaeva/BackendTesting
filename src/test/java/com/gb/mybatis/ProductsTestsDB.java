@@ -25,7 +25,7 @@ public class ProductsTestsDB {
     @DisplayName("Create product")
     void testCreateProduct() {
         Products product = new Products();
-        product.setPrice(35);
+        product.setPrice(36);
         product.setTitle("Coca cola");
         product.setCategoryId(1L);
 
