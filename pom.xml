@@ -38,7 +38,7 @@
                 <systemProperties>
                     <property>
                         <name>allure.results.directory</name>
-                        <value>BackendTests/allure-results</value>
+                        <value>BackendTests/target/allure-results</value>
                     </property>
                 </systemProperties>
                 </configuration>
