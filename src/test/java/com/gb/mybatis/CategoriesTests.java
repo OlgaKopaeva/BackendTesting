@@ -16,7 +16,7 @@ public class CategoriesTests {
         mapper = myBatisHelper.getCategoryMapper();
     }
 
-    @Test
+   // @Test
     @DisplayName("Get category")
     void testGetCategory() {
         Categories category = mapper.selectByPrimaryKey(1L);
