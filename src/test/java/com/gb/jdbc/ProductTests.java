@@ -15,13 +15,13 @@ public class ProductTests {
     }
 
     @Order(1)
-    @Test
+   // @Test
     public void testGetProductById() throws Exception {
         System.out.println(helper.getProductById(helper.getFirstProductId()));
     }
 
     @Order(2)
-    @Test
+   // @Test
     public void testGetProducts() throws Exception {
         List<Product> result = helper.getProducts();
         for (Product i : result) {
