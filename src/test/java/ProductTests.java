@@ -80,7 +80,6 @@ public class ProductTests {
 
     }
     @Order(4)
-    @Test
     @DisplayName("Delete product")
     void testDeleteProduct() throws IOException {
         System.out.println(dto.toString());
