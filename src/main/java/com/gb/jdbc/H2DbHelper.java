@@ -16,7 +16,7 @@ public class H2DbHelper {
         connectionProperties.put("user", "sa");
         connectionProperties.put("password", "");
         connection = DriverManager.getConnection(
-                "jdbc:h2:~/olcha/test",
+                "jdbc:h2:~/test",
                 connectionProperties
         );
         statement = connection.createStatement();
